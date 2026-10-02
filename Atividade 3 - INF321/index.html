@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<title>Página de Produtos UFV</title>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css"/>
+<script src="script.js" defer></script>
+</head>
+
+
+<body>
+
+<header>
+    <h1>Nossos Produtos UFV</h1>
+    <p>Confira abaixo os produtos disponíveis em nossa loja, com fotos, preços e informações detalhadas.</p>
+</header>
+
+<main>
+
+    <section>
+        <div class="Catálogo">
+                <h2 class="Titulo">Catálogo de Produtos UFV</h2>
+            <div class="busca">
+                <input type="text" id="buscaProduto" placeholder="Digite um produto..."/>
+                <button type="button" id="botaoBuscar">Buscar</button>
+            </div>
+            <p id="mensagemBusca" class="mensagem"></p>
+            <div class="container"> 
+                <article class="card">
+                    <h3 class="Produtos">Doce de Leite Viçosa</h3>
+                    <img src="https://produtosvicosa.org.br/wp-content/uploads/2019/01/doce-leite.png" alt="Foto do Doce de Leite" width="200"/>
+                    <p class="Preço">Preço: R$ 30,00</p>
+                    <a href="https://produtosvicosa.org.br/linhaprodutos/doce-de-leite/">Ver detalhes</a>
+                    <button type="button" class="comprar">Comprar</button>
+                </article>
+
+                <article class="card">
+                    <h3 class="Produtos">Bonés UFV</h3>
+                    <img src="https://supermercadoescola.org.br/produto/imagem?id=32051" alt="Foto dos Bonés" width="200"/>
+                    <p class="Preço">Preço: R$ 49,90</p>
+                    <a href="https://supermercadoescola.org.br/produto/bone-grife-ufv-un-bordado-modelo-novo">Ver detalhes</a>
+                    <button type="button" class="comprar">Comprar</button>
+                </article>
+
+                <article class="card">
+                    <h3 class="Produtos">Botânica Organografia</h3>
+                    <img src="https://editoraufv.jetassets.com.br/produto/20250521135710_2483997517_H.png" alt="Foto do Livro de Botânica" width="200"/>
+                    <p class="Preço">Preço: R$ 85,00</p>
+                    <a href="https://www.editoraufv.com.br/botanica--organografia-5a-edicao/p">Ver detalhes</a>
+                    <button type="button" class="comprar">Comprar</button>
+                </article>
+            </div>    
+        </div>
+
+    </section>
+
+    <section>
+        <div class="forms">
+            <h2>Entre em contato</h2>
+            <form id="formulario" action="#" method="post" novalidate>
+                <label for="nome">Nome:</label><br/>
+                <input type="text" id="nome" name="nome"/><br/><br/>
+
+                <label for="email">E-mail:</label><br/>
+                <input type="email" id="email" name="email"/><br/><br/>
+
+                <label for="mensagem">Mensagem:</label><br/>
+                <textarea id="mensagem" name="mensagem" rows="5"></textarea><br/><br/>
+
+                <button type="submit">Enviar</button>
+                <p id="mensagemFormulario" class="mensagem"></p>
+            </form>
+        </div>
+    </section>
+
+    
+    <section>
+        <div class = "Tabela">
+            <h2>Horário de Funcionamento</h2>
+            <table>
+                <tr>
+                    <th>Dias</th>
+                    <th>Horários</th>
+                </tr>
+                <tr>
+                    <td>Segunda-Sexta</td>
+                    <td>8:00 - 20:00</td>
+                </tr>
+                <tr>
+                    <td>Sábado-Domingo</td>
+                    <td>9:00 - 12:00</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>Produtos UFV</p>
+</footer>
+
+</body>
+</html>
